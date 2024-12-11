@@ -14,7 +14,6 @@ struct CoinRowView: View {
     
     var body: some View {
         HStack(spacing: 0) {
-           
             leftColumn
             Spacer()
             if showHoldingsColumn {
@@ -24,6 +23,7 @@ struct CoinRowView: View {
             rightColumn
         }
         .font(.subheadline)
+        .background(Color.theme.background.opacity(0.001))
     }
 }
 
